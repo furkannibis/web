@@ -1,7 +1,6 @@
 # Kodluyoruz ilk Repo
 [Kodluyoruz Eğitimi](https://www.kodluyoruz.org/) kapsamında açtığım ilk repo
 içerisinde bir şeyler bulunmakta
-[![](https://raw.githubusercontent.com/Kodluyoruz/taskforce/git/git/markdown-nedir-nasil-kullaniriz-/figures/kodluyoruz_logo.jpg)](https://kodluyoruz.org)
 
 ## Installation
 ```
