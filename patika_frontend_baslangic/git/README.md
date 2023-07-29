@@ -1,6 +1,6 @@
 # Kodluyoruz ilk Repo
 [Kodluyoruz Eğitimi](https://www.kodluyoruz.org/) kapsamında açtığım ilk repo
-içerisinde bir adet README dosyası ile index.html bulunmakta.
+içerisinde bir şeyler bulunmakta
 [![](https://raw.githubusercontent.com/Kodluyoruz/taskforce/git/git/markdown-nedir-nasil-kullaniriz-/figures/kodluyoruz_logo.jpg)](https://kodluyoruz.org)
 
 ## Installation
@@ -13,7 +13,7 @@ Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
 
 Linux için:
 ```
-cd kodluyoruzilkrepo
+cd web
 code .
 ```
 ## Contributing
