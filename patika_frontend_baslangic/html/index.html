@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
+    <style>
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>En çok kullanılan HTML Etiketleri</h1>
+    <b>&lt;!DOCTYPE html&gt;</b>: Dökümanın html dilinde olduğunu tarayıcıya belirten talimattır <br>
+    <b>&lt;html lang="en"&gt;</b>: Site içeriğinin dilini belirten etikettir.
     <ol type="1">
-        <li>HTML</li>
         <li>
-            HEAD
+            <b>HTML</b>: HTML etiketi, dosya içeriğinin HTML dilinde yazıldığını tarayıcıya bildirir.
+        </li>
+        <li>
+            <b>HEAD</b>: head etiketi, site ziyaretçileri tarafından görülmesi gerekmeyen kodları içerir.
             <ol type="a">
-                <li>
-                    <b>title</b>: Sayfaya başlık eklemek için kullanılır
-                </li>
+                <li>title</li>
                 <li>meta</li>
                 <li>style</li>
                 <li>script</li>
@@ -24,24 +31,64 @@
             </ol>
         </li>
         <li>
-            BODY
+            <b>BODY</b>: Web sayfamızda görmek istediğimiz bütün içerikleri body etiketi altına yazıyoruz.
             <ol type="a">
-                <li>H</li>
-                <li>P</li>
-                <li>BR</li>
-                <li>HR</li>
-                <li>A</li>
-                <li>UL-OL-LI</li>
-                <li>STRONG-B</li>
-                <li>SCRIPT</li>
-                <li>BUTTON</li>
-                <li>IMG</li>
-                <li>IFRAME</li>
-                <li>Yorum satırı</li>
+                <li>
+                    <b>H</b>: Başlık etiketidir. h1'den h6'ya kadar gider.
+                    <b>&lt;h1&gt;BAŞLIK METNİ&lt;/h1&gt;</b>
+                </li>
+                <li>
+                    <b>P</b>: Paragraf etiketidir. Sayfa içerisinde oluşturulacak metinler için kullanılır.
+                    <b>&lt;p&gt;PARAGRAF&lt;/p&gt;</b>
+                </li>
+                <li>
+                    <b>BR</b>: Satır atlama etiketidir.
+                    <b>&lt;br&gt;</b>
+                </li>
+                <li>
+                    <b>HR</b>: Ekrana yatay bir satır çizer.
+                    <b>&lt;hr&gt;</b>
+                </li>
+                <li>
+                    <b>A</b>: &lt;a&gt; etiketinin en önemli özelliği <b>href</b> özelliğidir. Bu etiket ile sayfaları linkleyebiliriz.
+                    <b>&lt;a&gt;</b>
+                </li>
+                <li>
+                    UL-OL-LI <br>
+                    <b>&lt;ul&gt;</b>: Unordered List anlamına gelir ve site içerisinde sırasız bir liste oluşturmamızı sağlar. <br>
+                    <b>&lt;ol&gt;</b>: Ordered List anlamına gelir ve site içerisinde sıralı bir liste oluşturmamızı sağlar. <br>
+                    <b>&lt;li&gt;</b>: Listelerin içerisine girilecek her maddeyi eklememizi sağlar.
+                </li>
+                <li>
+                    STRONG-B <br>
+                    <b>&lt;strong&gt;</b>: etiketi bir metinin arama motorlarında önemli olduğunu bildirmek için kullanılır ve metni kalın yapar. <br>
+                    <b>&lt;b&gt;</b>: metni yalnızca kalın yapar.
+                </li>
+                <li>
+                    SCRIPT <br>
+                    <b>&lt;script&gt;</b>: etiketi javascript kodlarını HTML içerisine yazabilmemizi sağlar.
+                </li>
+                <li>
+                    BUTTON <br>
+                    <b>&lt;button&gt;</b>: etiketini buton oluşturmak için kullanırız.
+                </li>
+                <li>
+                    IMG <br>
+                    <b>&lt;img&gt;</b>: etiketi resim eklemek için kullanırılır. Resmin yolur için <b>src</b>, resmin açıklaması için <b>alt</b> ifadesi kullanılır.
+                </li>
+                <li>
+                    IFRAME <br>
+                    <b>&lt;iframe&gt;</b>: etiketi belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız.
+
+                </li>
+                <li>
+                    Yorum satırı <br>
+                    <b>&lt;!-- --&gt;</b>: Yorum satırı için kullanılır.
+                </li>
             </ol>
         </li>
-
     </ol>
 
+    <h2>BAŞLIKLAR & PARAGRAFLARLA ÇALIŞMAK</h2>
 </body>
 </html>
