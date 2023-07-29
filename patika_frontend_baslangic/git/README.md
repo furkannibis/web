@@ -5,7 +5,7 @@ içerisinde bir adet README dosyası ile index.html bulunmakta.
 
 ## Installation
 ```
-$ git clone https://github.com/Ferhan-K/kodluyoruzilkrepo.git
+$ git clone [https://github.com/Ferhan-K/kodluyoruzilkrepo.git](https://github.com/furkannibis/web)
 ```
 
 ## Usage
