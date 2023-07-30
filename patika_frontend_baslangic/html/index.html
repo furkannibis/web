@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
     <style>
+        body {
+            margin: 0;
+        }
         li {
             margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>En çok kullanılan HTML Etiketleri</h1>
+    <h1 id="TOP">En çok kullanılan HTML Etiketleri</h1>
+    <a href="#bottom">En alta git</a><br>
     <b>&lt;!DOCTYPE html&gt;</b>: Dökümanın html dilinde olduğunu tarayıcıya belirten talimattır <br>
     <b>&lt;html lang="en"&gt;</b>: Site içeriğinin dilini belirten etikettir.
     <ol type="1">
@@ -274,5 +278,38 @@
         </li>
     </ul>
 
+    <h1>Görseller ile çalışmak</h1>
+    <p>&lt;img&gt; kullanılır</p>
+    <!-- src: Source -->
+    <img src="img/bayrak.png" alt="Türk Bayrağı" width="300" height="200">
+    <img src="https://assets.ubuntu.com/v1/6be6bcf2-Canonical_Docker_Infographic_visual.png" alt="Ubuntu" width="300" height="200">
+    <img src="https://picsum.photos/300/200" alt="">
+
+    <h1>LINKLERLE CALISMAK</h1>
+    <p>&lt;a&gt; kullanılır. Başka bir sayfaya gitmek ya da sayfa içerisinde bir yere gitmek ve mail atmak için kullanılır.<br>Başka bir sayfada açılmasını istersen target parametresini kullan</p>
+    <ul>
+        <li><a href="https://kodluyoruz.org" target="_blank">Başka bir websitesine git</a></li>
+        <li><a href="digersayfa.html">Başka bir sayfaya git</a></li>
+        <li><a href="#TOP">Sayfa içerisinde bir yere git</a></li>
+        <!-- ID bilgisine gidilebilir -->
+        <li><a href="mailto:info@kodluyoruz.com">Mail At</a></li>
+        <li><a href="tel:05551112233">Telefon aç</a></li>
+    </ul>
+
+    <h1>BLOCK ve INLINE elementlerle çalışmak</h1>
+    <ul>
+        <li>
+            <p><b>BLOCK</b>: kullanmasa bile ekranın olduğu bölümde tüm hattı kaplar</p>
+        </li>
+        <li>
+            <p><b>INLINE</b>: kullandığı alanı kaplar</p>
+        </li>
+    </ul>
+    <p><strong>Lorem</strong> ipsum dolor <i>sit amet consectetur</i>, <a href="#">adipisicing elit</a>. Quo, facilis?</p>
+    <p>Lorem inline ama paragraf block, sit amet consectetur italik yani inline element. adipisicing elit'de inline</p>
+    <p><a href="https://htmlreference.io" target="_blank">htmlreference.io</a> linkinde hepsinin listesi var</p>
+    <p>&lt;div&gt; ile bir division sayesinde bir grup tanımlayabiliriz</p>
+    <p>&lt;span&gt; ile hatali bir kutu oluşturulabilir.</p>
+    <span id="bottom"></span>
 </body>
 </html>
