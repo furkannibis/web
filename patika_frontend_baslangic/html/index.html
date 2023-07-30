@@ -74,7 +74,7 @@
                 </li>
                 <li>
                     IMG <br>
-                    <b>&lt;img&gt;</b>: etiketi resim eklemek için kullanırılır. Resmin yolur için <b>src</b>, resmin açıklaması için <b>alt</b> ifadesi kullanılır.
+                    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             <b>&lt;img&gt;</b>: etiketi resim eklemek için kullanırılır. Resmin yolur için <b>src</b>, resmin açıklaması için <b>alt</b> ifadesi kullanılır.
                 </li>
                 <li>
                     IFRAME <br>
@@ -91,12 +91,188 @@
 
     <h1>Kodluyoruz - Front-End</h1>
     <h2>HTML</h2>
+    <h3>Başlıklar & Paragraflar ile çalışmak.</h3>
     <p>Lorem, ipsum.</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis voluptatibus. Autem, molestias!</p>
     <p>Lorem ipsum dolor sit amet consectetur</p>
     <p>adipisicing.</p>
     
-    <h3>Başlıklar & Paragraflarla Çalışmak</h3>
+
+    <h1>Listeler ile çalışmak</h1>
+
+    <!-- Sıralı Liste - Ordered List -->
+    <h5>Sıralı liste</h5>
+    <ol>
+        <!-- li: List Item -->
+        <li>
+            <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+            <p>Vel, non similique!</p>
+        </li>
+        <li>
+            <p>Nulla, accusamus possimus?</p>
+        </li>
+    </ol>
+
+    <!-- Sırasız Liste - Unordered List -->
+    <h5>Sırasız Liste</h5>
+    <ul>
+        <!-- li: List Item -->
+        <li>
+            <p>Lorem, ipsum.</p>
+        </li>
+        <li>
+            <p>OL diğer özellikler</p>
+            <!-- type ile sıralaması için tip verdik -->
+            <ol type="A">
+                <li>
+                    <p>Lorem, ipsum.</p>
+                </li>
+                <li>
+                    <p>Nemo, praesentium!</p>
+                </li>
+                <li>
+                    <p>Ullam, aliquid?</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>Diğer özellikler</p>
+            <!-- CSS kodları ile sırasız listenin noktasını kaldırdık -->
+            <ul style="list-style-type: none;">
+                <li>
+                    <p>Lorem, ipsum dolor.</p>
+                </li>
+                <li>
+                    <p>Vel, aspernatur magnam!</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>EMMET ILE HTML YAPILARI OLUŞTURMAK</h1>
+    <!-- emmet.io sitesine ziyatette bulunabilirsin. -->
+    
+    <ul>
+        <li>
+            <p>+ Kardşe öğe</p>
+            <p>h1+h2</p>
+            <h1>.</h1>
+            <h2>.</h2>
+            <br>
+            <p>h1+p+p+h2+p+p+p+p</p>
+            <h1>.</h1>
+            <p>.</p>
+            <p>.</p>
+            <h2>.</h2>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </li>
+        <li>
+            <p>> İçine öğe</p>
+            <p>ul>li</p>
+            <ul>
+                <li>Lorem.</li>
+            </ul>
+            <p>ul>li*5>p>lorem2</p>
+            <ul>
+                <li>
+                    <p>Lorem, ipsum.</p>
+                </li>
+                <li>
+                    <p>Repellendus, eligendi!</p>
+                </li>
+                <li>
+                    <p>Aut, repudiandae.</p>
+                </li>
+                <li>
+                    <p>Rerum, dolorem.</p>
+                </li>
+                <li>
+                    <p>Vitae, aliquid?</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>^ Yukarı çık ve öğe oluştur</p>
+            <p>ul>li*3^p+h3</p>
+            <ul>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+            </ul>
+            <p>.</p>
+            <h3>.</h3>
+        </li>
+        <li>
+            <p>* Çarp -> p*3</p>
+            <p>h1+p+p+h2+p+p+p+p -> h1+p*2+h2+p*4</p>
+            <h1>.</h1>
+            <p>.</p>
+            <p>.</p>
+            <h2>.</h2>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </li>
+        <li>
+            <p>lorem</p>
+            <p>p>lorem2</p>
+            <p>Lorem, ipsum.</p>
+
+            <p>ul>li*3>p>lorem1^p*2>lorem4^h3>lorem2</p>
+            <ul>
+                <li>
+                    <p>Lorem.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Molestias, neque.</p>
+                    <h3>Lorem, ipsum.</h3>
+                </li>
+                <li>
+                    <p>Vero?</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Possimus, eos.</p>
+                    <h3>Sed, architecto.</h3>
+                </li>
+                <li>
+                    <p>Quas.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Suscipit, debitis!</p>
+                    <h3>Laborum, quisquam.</h3>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>. -> Class</p>
+            <p>h3.deneme</p>
+            <h3 class="deneme">Ben deneme class'ına sahip h3'üm</h3>
+            <p>h3.deneme>lorem2</p>
+            <h3 class="deneme">Lorem, ipsum.</h3>
+
+            <p>h3.birinciclass.ikinciclass.ucuncuclass</p>
+            <h3 class="birinciclass ikinciclass ucuncuclass">.</h3>
+
+            <p>.tepki</p>
+            <div class="tepki">.</div>
+
+            <p>ul>li.tepki</p>
+            <ul>
+                <li class="tepki">.</li>
+            </ul>
+        </li>
+        <li>
+            <p># -> id</p>
+            <p>h3#deneme>lorem2</p>
+            <h3 id="deneme">Lorem, ipsum.</h3>
+
+            <p>h3.deneme#idolussun>lorem1</p>
+            <h3 class="deneme" id="idolussun">Lorem.</h3>
+        </li>
+    </ul>
 
 </body>
 </html>
