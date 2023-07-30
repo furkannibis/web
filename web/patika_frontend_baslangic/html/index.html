@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="TOP">En çok kullanılan HTML Etiketleri</h1>
+    <a href="#bottom">En alta git</a><br>
+    <b>&lt;!DOCTYPE html&gt;</b>: Dökümanın html dilinde olduğunu tarayıcıya belirten talimattır <br>
+    <b>&lt;html lang="en"&gt;</b>: Site içeriğinin dilini belirten etikettir.
+    <ol type="1">
+        <li>
+            <b>HTML</b>: HTML etiketi, dosya içeriğinin HTML dilinde yazıldığını tarayıcıya bildirir.
+        </li>
+        <li>
+            <b>HEAD</b>: head etiketi, site ziyaretçileri tarafından görülmesi gerekmeyen kodları içerir.
+            <ol type="a">
+                <li>title</li>
+                <li>meta</li>
+                <li>style</li>
+                <li>script</li>
+                <li>noscript</li>
+                <li>link</li>
+                <li>base</li>
+            </ol>
+        </li>
+        <li>
+            <b>BODY</b>: Web sayfamızda görmek istediğimiz bütün içerikleri body etiketi altına yazıyoruz.
+            <ol type="a">
+                <li>
+                    H: Başlık etiketidir. h1'den h6'ya kadar gider.
+                    <b>&lt;h1&gt;BAŞLIK METNİ&lt;/h1&gt;</b>
+                </li>
+                <li>
+                    P: Paragraf etiketidir. Sayfa içerisinde oluşturulacak metinler için kullanılır.
+                    <b>&lt;p&gt;PARAGRAF&lt;/p&gt;</b>
+                </li>
+                <li>
+                    BR: Satır atlama etiketidir.
+                    <b>&lt;br&gt;</b>
+                </li>
+                <li>
+                    HR: Ekrana yatay bir satır çizer.
+                    <b>&lt;hr&gt;</b>
+                </li>
+                <li>
+                    A: &lt;a&gt; etiketinin en önemli özelliği <b>href</b> özelliğidir. Bu etiket ile sayfaları linkleyebiliriz.
+                    <b>&lt;a&gt;</b>
+                </li>
+                <li>
+                    UL-OL-LI <br>
+                    <b>&lt;ul&gt;</b>: Unordered List anlamına gelir ve site içerisinde sırasız bir liste oluşturmamızı sağlar. <br>
+                    <b>&lt;ol&gt;</b>: Ordered List anlamına gelir ve site içerisinde sıralı bir liste oluşturmamızı sağlar. <br>
+                    <b>&lt;li&gt;</b>: Listelerin içerisine girilecek her maddeyi eklememizi sağlar.
+                </li>
+                <li>
+                    STRONG-B <br>
+                    <b>&lt;strong&gt;</b>: etiketi bir metinin arama motorlarında önemli olduğunu bildirmek için kullanılır ve metni kalın yapar. <br>
+                    <b>&lt;b&gt;</b>: metni yalnızca kalın yapar.
+                </li>
+                <li>
+                    SCRIPT <br>
+                    <b>&lt;script&gt;</b>: etiketi javascript kodlarını HTML içerisine yazabilmemizi sağlar.
+                </li>
+                <li>
+                    BUTTON <br>
+                    <b>&lt;button&gt;</b>: etiketini buton oluşturmak için kullanırız.
+                </li>
+                <li>
+                    IMG <br>
+                    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             <b>&lt;img&gt;</b>: etiketi resim eklemek için kullanırılır. Resmin yolur için <b>src</b>, resmin açıklaması için <b>alt</b> ifadesi kullanılır.
+                </li>
+                <li>
+                    IFRAME <br>
+                    <b>&lt;iframe&gt;</b>: etiketi belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız.
+
+                </li>
+                <li>
+                    Yorum satırı <br>
+                    <b>&lt;!-- --&gt;</b>: Yorum satırı için kullanılır.
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <h1>Kodluyoruz - Front-End</h1>
+    <h2>HTML</h2>
+    <h3>Başlıklar & Paragraflar ile çalışmak.</h3>
+    <p>Lorem, ipsum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis voluptatibus. Autem, molestias!</p>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+    <p>adipisicing.</p>
+    
+
+    <h1>Listeler ile çalışmak</h1>
+
+    <!-- Sıralı Liste - Ordered List -->
+    <h5>Sıralı liste</h5>
+    <ol>
+        <!-- li: List Item -->
+        <li>
+            <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+            <p>Vel, non similique!</p>
+        </li>
+        <li>
+            <p>Nulla, accusamus possimus?</p>
+        </li>
+    </ol>
+
+    <!-- Sırasız Liste - Unordered List -->
+    <h5>Sırasız Liste</h5>
+    <ul>
+        <!-- li: List Item -->
+        <li>
+            <p>Lorem, ipsum.</p>
+        </li>
+        <li>
+            <p>OL diğer özellikler</p>
+            <!-- type ile sıralaması için tip verdik -->
+            <ol type="A">
+                <li>
+                    <p>Lorem, ipsum.</p>
+                </li>
+                <li>
+                    <p>Nemo, praesentium!</p>
+                </li>
+                <li>
+                    <p>Ullam, aliquid?</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>Diğer özellikler</p>
+            <!-- CSS kodları ile sırasız listenin noktasını kaldırdık -->
+            <ul style="list-style-type: none;">
+                <li>
+                    <p>Lorem, ipsum dolor.</p>
+                </li>
+                <li>
+                    <p>Vel, aspernatur magnam!</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>EMMET ILE HTML YAPILARI OLUŞTURMAK</h1>
+    <!-- emmet.io sitesine ziyatette bulunabilirsin. -->
+    
+    <ul>
+        <li>
+            <p>+ Kardşe öğe</p>
+            <p>h1+h2</p>
+            <h1>.</h1>
+            <h2>.</h2>
+            <br>
+            <p>h1+p+p+h2+p+p+p+p</p>
+            <h1>.</h1>
+            <p>.</p>
+            <p>.</p>
+            <h2>.</h2>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </li>
+        <li>
+            <p>> İçine öğe</p>
+            <p>ul>li</p>
+            <ul>
+                <li>Lorem.</li>
+            </ul>
+            <p>ul>li*5>p>lorem2</p>
+            <ul>
+                <li>
+                    <p>Lorem, ipsum.</p>
+                </li>
+                <li>
+                    <p>Repellendus, eligendi!</p>
+                </li>
+                <li>
+                    <p>Aut, repudiandae.</p>
+                </li>
+                <li>
+                    <p>Rerum, dolorem.</p>
+                </li>
+                <li>
+                    <p>Vitae, aliquid?</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>^ Yukarı çık ve öğe oluştur</p>
+            <p>ul>li*3^p+h3</p>
+            <ul>
+                <li>.</li>
+                <li>.</li>
+                <li>.</li>
+            </ul>
+            <p>.</p>
+            <h3>.</h3>
+        </li>
+        <li>
+            <p>* Çarp -> p*3</p>
+            <p>h1+p+p+h2+p+p+p+p -> h1+p*2+h2+p*4</p>
+            <h1>.</h1>
+            <p>.</p>
+            <p>.</p>
+            <h2>.</h2>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </li>
+        <li>
+            <p>lorem</p>
+            <p>p>lorem2</p>
+            <p>Lorem, ipsum.</p>
+
+            <p>ul>li*3>p>lorem1^p*2>lorem4^h3>lorem2</p>
+            <ul>
+                <li>
+                    <p>Lorem.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Molestias, neque.</p>
+                    <h3>Lorem, ipsum.</h3>
+                </li>
+                <li>
+                    <p>Vero?</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Possimus, eos.</p>
+                    <h3>Sed, architecto.</h3>
+                </li>
+                <li>
+                    <p>Quas.</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>Suscipit, debitis!</p>
+                    <h3>Laborum, quisquam.</h3>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>. -> Class</p>
+            <p>h3.deneme</p>
+            <h3 class="deneme">Ben deneme class'ına sahip h3'üm</h3>
+            <p>h3.deneme>lorem2</p>
+            <h3 class="deneme">Lorem, ipsum.</h3>
+
+            <p>h3.birinciclass.ikinciclass.ucuncuclass</p>
+            <h3 class="birinciclass ikinciclass ucuncuclass">.</h3>
+
+            <p>.tepki</p>
+            <div class="tepki">.</div>
+
+            <p>ul>li.tepki</p>
+            <ul>
+                <li class="tepki">.</li>
+            </ul>
+        </li>
+        <li>
+            <p># -> id</p>
+            <p>h3#deneme>lorem2</p>
+            <h3 id="deneme">Lorem, ipsum.</h3>
+
+            <p>h3.deneme#idolussun>lorem1</p>
+            <h3 class="deneme" id="idolussun">Lorem.</h3>
+        </li>
+    </ul>
+
+    <h1>Görseller ile çalışmak</h1>
+    <p>&lt;img&gt; kullanılır</p>
+    <!-- src: Source -->
+    <img src="img/bayrak.png" alt="Türk Bayrağı" width="300" height="200">
+    <img src="https://assets.ubuntu.com/v1/6be6bcf2-Canonical_Docker_Infographic_visual.png" alt="Ubuntu" width="300" height="200">
+    <img src="https://picsum.photos/300/200" alt="">
+
+    <h1>LINKLERLE CALISMAK</h1>
+    <p>&lt;a&gt; kullanılır. Başka bir sayfaya gitmek ya da sayfa içerisinde bir yere gitmek ve mail atmak için kullanılır.<br>Başka bir sayfada açılmasını istersen target parametresini kullan</p>
+    <ul>
+        <li><a href="https://kodluyoruz.org" target="_blank">Başka bir websitesine git</a></li>
+        <li><a href="digersayfa.html">Başka bir sayfaya git</a></li>
+        <li><a href="#TOP">Sayfa içerisinde bir yere git</a></li>
+        <!-- ID bilgisine gidilebilir -->
+        <li><a href="mailto:info@kodluyoruz.com">Mail At</a></li>
+        <li><a href="tel:05551112233">Telefon aç</a></li>
+    </ul>
+
+    <h1>BLOCK ve INLINE elementlerle çalışmak</h1>
+    <ul>
+        <li>
+            <p><b>BLOCK</b>: kullanmasa bile ekranın olduğu bölümde tüm hattı kaplar</p>
+        </li>
+        <li>
+            <p><b>INLINE</b>: kullandığı alanı kaplar</p>
+        </li>
+    </ul>
+    <p><strong>Lorem</strong> ipsum dolor <i>sit amet consectetur</i>, <a href="#">adipisicing elit</a>. Quo, facilis?</p>
+    <p>Lorem inline ama paragraf block, sit amet consectetur italik yani inline element. adipisicing elit'de inline</p>
+    <p><a href="https://htmlreference.io" target="_blank">htmlreference.io</a> linkinde hepsinin listesi var</p>
+    <p>&lt;div&gt; ile bir division sayesinde bir grup tanımlayabiliriz</p>
+    <p>&lt;span&gt; ile hatali bir kutu oluşturulabilir.</p>
+    <span id="bottom"></span>
+</body>
+</html>
