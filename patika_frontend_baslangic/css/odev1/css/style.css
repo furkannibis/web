@@ -1,0 +1,39 @@
+body {
+  background-color: #eac696;
+  text-align: center;
+}
+
+.h1 {
+  color: #65451f;
+}
+
+a {
+  text-decoration: none;
+  color: #65451f;
+}
+
+ul {
+  display: inline-block;
+  list-style-position: inside;
+}
+ol {
+  display: inline-block;
+  list-style-position: inside;
+}
+.paragraph {
+  color: #765827;
+}
+
+img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+.leftParagraph {
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
