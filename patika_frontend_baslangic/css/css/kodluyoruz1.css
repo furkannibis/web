@@ -1,0 +1,19 @@
+/************************ Body      *********************************/
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+/************************ Paragraph *********************************/
+p {
+  color: white;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-family: "Edu SA Beginner", cursive;
+  /* background-color: coral; */
+}
+
+ul {
+  color: cadetblue;
+}
