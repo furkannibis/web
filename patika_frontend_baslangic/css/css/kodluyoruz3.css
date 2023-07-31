@@ -1,0 +1,45 @@
+/* CSS - Selectors */
+
+/* 
+.class1 .class2 -> class2 class1'in içerisinde olduğu zaman 
+*/
+.color-blue .fw-bold {
+  color: blue;
+  font-weight: bold;
+}
+
+/* ul > li:first-child -> ul içerisindeki ilk li */
+ul > li:first-child {
+  color: blue;
+  font-weight: bold;
+}
+
+/* ul > li:last-child -> ul içerisindeki son li */
+ul > li:last-child {
+  color: red;
+  font-weight: bold;
+}
+
+/* ul > li:nth-child(x) -> ul içerisindeki x. li */
+ul > li:nth-child(2) {
+  color: green;
+  font-weight: bold;
+}
+
+/* ul > li:nth-child(odd) -> ul içerisindeki tek sayılısı sıradaki liler */
+ul > li:nth-child(odd) {
+  background-color: pink;
+  font-weight: bold;
+}
+
+/* ul > li:nth-child(even) -> ul içerisindeki çift sayılısı sıradaki liler */
+ul > li:nth-child(even) {
+  background-color: aqua;
+  font-weight: bold;
+}
+
+/* ul > li:nth-child(3n) -> ul içerisindeki 3. ve katları liler */
+ul > li:nth-child(3n) {
+  background-color: gray;
+  font-weight: bold;
+}
