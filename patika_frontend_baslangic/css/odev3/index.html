@@ -3,33 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/css.gg@2.0.0/icons/css/menu.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>ÖDEV 3 | Kodluyoruz</title>
   </head>
   <body>
     <div class="container">
-      <div class="containerImage ta-center">
-        <img src="media/person.jpeg" alt="" height="80" />
+      <div class="containerImage">
+        <img src="media/person.jpeg" height="50" />
       </div>
-      <div class="containerImage ta-center">
-        <img src="media/house-solid.svg" alt="" height="50" />
+      <div class="containerImage">
+        <img src="media/house-solid.svg" height="50" />
       </div>
-      <div class="containerText ta-center">
-        <a href="#">Images</a>
-      </div>
-      <div class="containerText ta-center">
-        <a href="#">Gmail</a>
-      </div>
-      <div class="googleImage">
-        <img src="media/google.png" height="100" />
-        <form class="textSettings">
-          <input type="text" />
-        </form>
+      <div class="containerTextArea">
+        <a href="#" class="containerText">Images</a>
+      </div class="containerTextArea">
+      <div>
+        <a href="#" class="containerText">Gmail</a>
       </div>
     </div>
+  <div class="googleContainer">
+    <div class="googleContainerImage">
+      <img src="media/google.png" height="100">
+    </div>
+    <div class="googleContainerText">
+      <form>
+        <input type="text" class="googleContainerTextInput">
+      </form>
+    </div>
+  </div>
+  <div class="bottomButton">
+    <button class="bottomButtonSettings">Google Search</button>
+    <button class="bottomButtonSettings">I'm Feeling Lucky</button>
+  </div>
   </body>
 </html>
