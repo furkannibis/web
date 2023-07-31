@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 10%;
+  height: 400px;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.containerImage {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+}
+
+.containerText {
+  width: 100%;
+  height: 80px;
+}
+
+.googleImage {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.textSettings {
+  width: 100%;
+}
