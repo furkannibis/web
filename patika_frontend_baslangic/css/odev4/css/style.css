@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  width: 100%;
+  height: 50px;
+}
+
+.topbarLeftArea {
+  width: 6%;
+  height: 50px;
+  text-align: center;
+  float: left;
+}
+
+.topbarRightArea {
+  width: 6%;
+  text-align: center;
+  height: 50px;
+  float: right;
+}
+
+.topbarText {
+  text-align: center;
+  padding: 10% 0 0 0;
+}
+
+.topbarImage {
+  padding: 25% 0 0 0;
+  width: 25%;
+}
+
+.topbarButton {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: white;
+}
+
+.mainBarContainer {
+  margin: 10% auto;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.mainBarContainerImage {
+  width: 100%;
+  height: 100px;
+  background-image: url("../media/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.mainbarContainerTextInput {
+  width: 60%;
+  margin: 1% auto;
+  border-radius: 20px;
+  border: 1px solid gray;
+  box-shadow: none;
+  height: 50px;
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+      no-repeat left,
+    url("../media/voicelogo.png") no-repeat right;
+  background-size: 30px;
+  padding-left: 3%;
+  font-size: 24px;
+}
+
+.mainbarButton {
+  width: 10%;
+  color: #272829;
+  background-color: #d8d9da;
+  box-shadow: none;
+  border: none;
+  border-radius: 10px;
+  margin: 1% auto;
+  height: 35px;
+  font-size: 15px;
+}
+
+.footerArea {
+  width: 99%;
+  height: 30px;
+  text-align: left;
+  padding-left: 1%;
+  background-color: #d8d9da;
+}
+
+.footerLeftTextArea {
+  padding-top: 0.5%;
+  color: #272829;
+  width: 9%;
+  font-size: 13px;
+  float: left;
+}
+
+.footerRightTextArea {
+  padding-top: 0.5%;
+  color: #272829;
+  width: 5%;
+  font-size: 13px;
+  float: right;
+}
