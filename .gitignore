@@ -2,6 +2,6 @@
 *.png
 *.jpeg
 *.jpg
-
+*.ico
 # video
 *.mp4
