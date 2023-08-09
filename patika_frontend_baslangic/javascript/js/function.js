@@ -42,4 +42,14 @@ function greetings2(firstname = "", lastname = "") {
   let info = `Merhaba, ${firstname ? firstname : "Guest"} ${
     lastname ? lastname : "Guest"
   }`;
+  return info;
 }
+console.log(greetings2("Furkan", "IBIS"));
+
+function greeting2h3(id, info) {
+  let domObject = document.querySelector(`${id}`);
+  domObject.innerHTML = info;
+}
+
+let htmlInfo = `<span style="color:red";>color red</span>`;
+greeting2h3("h3#greeting", htmlInfo);
