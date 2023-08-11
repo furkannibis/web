@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.headerArea {
+  text-align: center;
+  color: white;
+}
+.headerArea > p {
+  font-size: 10px;
+}
+
+.formBox {
+  margin-top: 20px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.formText {
+  height: 30px;
+  width: 69%;
+  margin: 0 0 0 0;
+}
+
+.formButton {
+  margin: 0;
+  height: 36px;
+  width: 29%;
+}
+
+.listArea {
+  width: 90%;
+  margin: auto;
+}
+
+.listUL {
+  list-style-type: none;
+}
+
+.listLI {
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 1%;
+  margin-bottom: 15px;
+  background-color: white;
+  color: black;
+}
+
+.listLink {
+  text-decoration: none;
+  background-color: white;
+  opacity: 50%;
+}
+.listLI:hover,
+.listLink:hover {
+  background-color: black;
+  color: white;
+}
+.exitLI {
+  float: right;
+  text-align: center;
+  width: 3%;
+  color: white;
+  height: 40px;
+}
