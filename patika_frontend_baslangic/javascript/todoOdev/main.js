@@ -1,69 +1,20 @@
-const ulDOM = document.querySelector("#listUL");
-const userFormTextDOM = document.querySelector("#formText");
-const userFormDOM = document.querySelector("#userForm");
-const smallParagraphDOM = document.querySelector("#smallParagraph");
-
-window.addEventListener("DOMContentLoaded", function () {
-  loadListFromLocalStorage();
-  updateBackgroundImage();
-  displayRandomBatmanSentence();
-});
-
-// Form gönderildiğinde çalışacak fonksiyon
-function addToList(event) {
-  event.preventDefault();
-  const userInput = userFormTextDOM.value.trim();
-
-  if (userInput) {
-    createListItem(userInput);
-    updateLocalStorage();
-    userFormTextDOM.value = "";
-    alert("Bu iş bende!");
-  } else {
-    alert("Düzgün bir isim vermen gerekiyor?");
+function fromLocalStory() {
+  const items = { ...localStorage };
+  console.log(items);
+  for (let k in items) {
+    let liDOM = document.createElement("li");
+    liDOM.classList.add("listLI");
+    liDOM.innerHTML = `<span>${k}</span><a href="#" class="listLink"><span class="exitLI">X</span></a>`;
+    liDOM.querySelector(".exitLI").addEventListener("click", function () {
+      ulDOM.removeChild(liDOM);
+      localStorage.removeItem(k);
+    });
+    ulDOM.appendChild(liDOM);
   }
 }
 
-// localStorage güncelleme fonksiyonu
-function updateLocalStorage() {
-  localStorage.setItem("listData", JSON.stringify(liList));
-}
-
-// localStorage'den veriyi alarak liste oluşturma fonksiyonu
-function loadListFromLocalStorage() {
-  const storedListData = localStorage.getItem("listData");
-  if (storedListData) {
-    liList = JSON.parse(storedListData);
-    for (const itemText of liList) {
-      createListItem(itemText);
-    }
-  }
-}
-
-// Yeni bir liste öğesi oluşturan fonksiyon
-function createListItem(text) {
-  const liDOM = document.createElement("li");
-  liDOM.classList.add("listLI");
-  liDOM.innerHTML = `<span>${text}</span><a href="#" class="listLink"><span class="exitLI">X</span></a>`;
-
-  liDOM.querySelector(".exitLI").addEventListener("click", function () {
-    ulDOM.removeChild(liDOM);
-    liList = liList.filter((item) => item !== text);
-    updateLocalStorage();
-  });
-
-  ulDOM.appendChild(liDOM);
-  liList.push(text);
-}
-
-function updateBackgroundImage() {
-  const randomImageNumber = Math.floor(Math.random() * 6) + 1;
-  document.body.style.backgroundImage = `url(media/image${randomImageNumber}.jpg)`;
-}
-
-// Rastgele Batman cümlesi gösterme fonksiyonu
-function displayRandomBatmanSentence() {
-  const sentenceList = [
+function batmanSentence() {
+  let sentenceList = [
     "I'm Batman.",
     "I Think We Can Take Them. Do You Think We Can Take Them?",
     "I’m Still Here",
@@ -92,10 +43,41 @@ function displayRandomBatmanSentence() {
     "Vengeance Won't Change The Past. I Have To Become More.",
     "Yes, Father. I Shall Become A Bat",
   ];
-  const selectedSentence =
-    sentenceList[Math.floor(Math.random() * sentenceList.length)];
-  smallParagraphDOM.innerHTML = `<i>${selectedSentence}</i>`;
+  const parag = document.querySelector("#smallParagraph");
+  let selectedSentence = `<i>${
+    sentenceList[Math.floor(Math.random() * sentenceList.length)]
+  }</i>`;
+  parag.style.fontSize = "15px";
+  parag.innerHTML = selectedSentence;
 }
 
-// Form gönderim olayını dinle
+function addToList(event) {
+  event.preventDefault();
+  if (!userFormTextDOM.value || !userFormTextDOM.value.trim()) {
+    alert("Düzgün bir isim vermen gerekiyor?");
+  } else {
+    let liDOM = document.createElement("li");
+    liDOM.classList.add("listLI");
+    liDOM.innerHTML = `<span>${userFormTextDOM.value}</span><a href="#" class="listLink"><span class="exitLI">X</span></a>`;
+    liDOM.querySelector(".exitLI").addEventListener("click", function () {
+      ulDOM.removeChild(liDOM);
+      localStorage.removeItem(userFormTextDOM.value);
+    });
+    localStorage.setItem(`${userFormTextDOM.value}`, liDOM.innerHTML);
+    ulDOM.appendChild(liDOM);
+    alert("Bu iş bende!");
+  }
+}
+
+document.body.style.backgroundImage = `url(media/image${
+  Math.floor(Math.random() * 6) + 1
+}.jpg)`;
+
+batmanSentence();
+
+let liList = [];
+const ulDOM = document.querySelector("#listUL");
+const userFormTextDOM = document.querySelector("#formText");
+const userFormDOM = document.querySelector("#userForm");
 userFormDOM.addEventListener("submit", addToList);
+fromLocalStory();
