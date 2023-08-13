@@ -73,3 +73,12 @@ let {
 } = settings;
 console.log(newSettings);
 console.log(userName2, password2, isActive2, newSettings);
+
+let settings2 = { ...settings };
+
+let score = [100, 200, 300, 400];
+let [score1, score2, ...scoreOthers] = score;
+console.log(score1, score2, scoreOthers);
+
+let score3 = [...score];
+console.log(score3);
