@@ -1,0 +1,14 @@
+.smaller {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.bigger {
+  width: 300px;
+  height: 100px;
+  border: 1px solid red;
+  padding: 50px;
+  box-sizing: border-box;
+}

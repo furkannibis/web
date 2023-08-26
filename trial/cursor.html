@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .container {
+        display: flex;
+        padding: 20px 0;
+      }
+      .box {
+        height: 60px;
+        width: 60px;
+        background-color: green;
+        color: #fff;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 60px;
+      }
+      .one:hover {
+        cursor: default;
+      }
+      .two:hover {
+        cursor: pointer;
+      }
+      .three:hover {
+        cursor: text;
+      }
+      .four:hover {
+        cursor: move;
+      }
+      .five:hover {
+        cursor: zoom-in;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box one">default</div>
+      <div class="box two">pointer</div>
+      <div class="box three">text</div>
+      <div class="box four">move</div>
+      <div class="box five">zoom-in</div>
+    </div>
+  </body>
+</html>
