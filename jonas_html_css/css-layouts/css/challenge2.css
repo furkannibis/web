@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 4px solid black;
+}
+
+.is-product-sale {
+    position: absolute;
+    text-align: center;
+    padding-top: 8px;
+    top: -15px;
+    left: -25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: red;
+    width: 60px;
+    height: 30px;
+}
+
+.product-header {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    height: 50px;
+}
+
+.product-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 1 200px;
+}
+
+.product-img {
+    height: 300px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 12px;
+}
+
+.product-price-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.product-free-shipping {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.product-text {
+    letter-spacing: 1.6px;
+    font-size: 16px;
+}
+
+.product-link{
+     font-size: 16px;
+     text-decoration: none;
+     font-weight: bold;
+     color: black;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+.product-color-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-color-black{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.product-color-blue {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+.product-color-red {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+.product-color-yellow {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+.product-color-green {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+.product-color-brown {
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+}
+
+.product-details {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 12px;
+}
+
+.product-details-header {
+    text-transform: uppercase;
+}
+
+.product-details-list {
+    list-style-type: square;
+}
+
+.product-details-list-item {
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 100%;
+    height: 92px;
+    border:none;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
