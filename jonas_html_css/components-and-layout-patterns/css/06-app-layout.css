@@ -17,7 +17,7 @@ body {
     grid-template-rows: 80px 1fr;
 }
 
-nav, menu, section, main, aside {
+nav, section, main, aside {
     padding-top: 24px;
 }
 
@@ -29,13 +29,50 @@ nav {
 
 menu {
     background-color: #7048e8;
-    color: #fff;
-
     grid-column: 2 / -1;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 12px;
+    padding: 0 40px;
+}
+
+button:last-child {
+    background-color: #d6336c;
+    margin-left: auto;
+}
+
+button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5f3dc4;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 12px;
 }
 
 section {
     background-color: #e9ecef;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    /* How elements that don't fit into container appear */
+    overflow: scroll;
+}
+.email {
+    background-color: #adb5bd;
+    height: 96px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 aside {
