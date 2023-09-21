@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../media/hero-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 5rem 0 0 0;
+}
+
+.header {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-content {
+    display: inline-block;
+    font-size: 3.6rem;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    
+}
+
+.header-content a:hover, .header-content a:active {
+    background-color: #d3d3d3;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 4.6rem;
+}
+
+.nav-items:link, .nav-items:visited {
+    text-decoration: none;
+    padding: 1rem 1.6rem;
+    font-size: 2.4rem;
+    
+}
+
+.nav-items:hover, .nav-items:active {
+    box-shadow: inset 0 0 0 0.3rem #fff;
+    border-radius: 100rem;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 1.6rem;
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-header {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+
+.main-paragraph {
+    font-size: 1.6rem;
+    line-height: 1.05;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    border: none;
+    background-color: #7e7e7e;
+    opacity: 70%;
+    padding: 1.6rem 2rem;
+    border-radius: 100rem;
+    font-size: 3rem;
+}
+
+.btn:hover {
+    opacity: 100%;
+}

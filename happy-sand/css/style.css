@@ -1,0 +1,116 @@
+/* 
+
+    SIZE SYSTEM
+    6 / 12 / 16 / 24 / 32 / 48 / 56 / 68 / 80 / 96 / 114
+
+    SPACING SYSTEM
+    6 / 10 / 16 / 28 / 56 / 82 / 104
+
+    COLOR SYSTEM
+    Default: #fff3bf
+
+    FONT WEIGHT SYSTEM
+    Default: 400
+    Bold: 700
+
+    LINE HEIGHT SYSTEM
+    Default: 1
+    H1: 1.05
+
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(34, 34, 34,0.6), rgba(34, 34, 34,0.6)),url(../media/background-img.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+nav {
+    padding-top: 3.2rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #ffe066;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 120rem;
+    margin-bottom: 11.4rem;
+}
+
+.header-container {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    column-gap: 5.6rem;
+    margin: 0 auto;
+}
+
+.header-container-inner-heading {
+    color: #ffec99;
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.05;
+    margin-bottom: 2.8rem;
+}
+
+.header-container-inner-paragraph {
+    color: #fff3bf;
+    font-size: 1.6rem;
+    margin-bottom: 5.6rem;
+}
+
+.btn:link, .btn:visited {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 1.6rem;
+    color: #fff9db;
+    text-decoration: none;
+    border: 2px solid #fff9db;
+    position: relative;
+
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: bottom right;
+}
+
+.btn:link::before, .btn:visited::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff9db;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
