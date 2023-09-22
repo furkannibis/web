@@ -5,3 +5,4 @@ https://yeun.github.io/open-color/ 	--> Color
 https://heroicons.com/			--> Free Icons
 https://maketintsandshades.com/		--> tints and shades generator
 https://coolors.co/contrast-checker     --> Contrast checker
+https://ionic.io/ionicons 		--> Free Icons
