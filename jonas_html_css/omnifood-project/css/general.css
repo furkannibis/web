@@ -80,7 +80,7 @@ body {
     /* gap: 9.6rem; */
     column-gap: 6.4rem;
     row-gap: 9.6rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 9.6rem;
 }
 
@@ -106,6 +106,10 @@ body {
 
 .grid--center-v {
     align-items: center;
+}
+
+.grid--center-h {
+    justify-items: center;
 }
 
 .heading-primary, .heading-secondary, .heading-tertiary {
