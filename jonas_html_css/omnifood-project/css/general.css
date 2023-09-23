@@ -27,8 +27,10 @@ Shades: #cf711f - #fae5d3
 Accents: 
 Greys: #555 - #333
 Lightest grey allowed on #6f6f6f
+#eb984e
 
 -- SHADOWS: --
+box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
 
 -- BORDER RADIUS: --
 Default: 0.9rem
