@@ -47,11 +47,33 @@ allLinksEls.forEach(function(link) {
 
     // When mobile devices want to go some section we have close nav area after the user click
     if(link.classList.contains('main-nav-link')){
-      headerEl.classList.toggle('nav-open')
-    }
+        headerEl.classList.toggle('nav-open')
+      }
     }
   })
 })
+
+///////////////////////////////////////////////////////////
+// STICKY NAVIGATION
+const sectionHeroEl = document.querySelector('.section-hero');
+
+const obs = new IntersectionObserver(function(entries){
+  const ent = entries[0]
+  console.log(ent)
+  if(ent.isIntersecting === false) {
+    document.body.classList.add('sticky')
+  }
+  if (ent.isIntersecting) {
+    document.body.classList.remove('sticky')
+  }
+}, 
+{
+  // In the viewport
+  root: null,
+  threshold: 0,
+  rootMargin: '-90px',
+});
+obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
