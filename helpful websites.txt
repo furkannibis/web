@@ -7,3 +7,4 @@ https://maketintsandshades.com/		--> tints and shades generator
 https://coolors.co/contrast-checker     --> Contrast checker
 https://ionic.io/ionicons 		--> Free Icons
 https://caniuse.com/         		--> Check the browsers support css property
+https://squoosh.app/ 			--> Compress file
