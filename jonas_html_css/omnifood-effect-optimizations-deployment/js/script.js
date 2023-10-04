@@ -24,6 +24,35 @@ btnNavEl.addEventListener('click', function() {
   headerEl.classList.toggle('nav-open')
 });
 
+/////////////////////////////////////////////////
+// Smooth scrolling animation
+const allLinksEls = document.querySelectorAll('a');
+console.log(allLinksEls);
+allLinksEls.forEach(function(link) {
+  // e: event
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    // console.log(e)
+    const href = link.getAttribute('href')
+    // console.log(href)
+    // Scroll back to top
+    if(href==='#') window.scrollTo({
+      top:0,
+      behavior: 'smooth',
+    });
+    if (href !== '#' && href.startsWith('#')) {
+      // console.log(href)
+    const sectionElement = document.querySelector(href)
+    sectionElement.scrollIntoView({behavior: 'smooth'});
+
+    // When mobile devices want to go some section we have close nav area after the user click
+    if(link.classList.contains('main-nav-link')){
+      headerEl.classList.toggle('nav-open')
+    }
+    }
+  })
+})
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
