@@ -6,3 +6,4 @@ https://heroicons.com/			--> Free Icons
 https://maketintsandshades.com/		--> tints and shades generator
 https://coolors.co/contrast-checker     --> Contrast checker
 https://ionic.io/ionicons 		--> Free Icons
+https://caniuse.com/         		--> Check the browsers support css property
